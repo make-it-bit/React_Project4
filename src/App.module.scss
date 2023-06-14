@@ -1,0 +1,62 @@
+.wholeAppComponent{
+  width: 600px;
+  max-width: 90%;
+  margin: 10vh auto 10vh auto;
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: calc(5vh + 20px);
+}
+
+.addItemSection {
+  border: 2px solid black;
+  width: 600px;
+  max-width: 90%;
+  padding: 10px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.addItemSection h1 {
+  margin: 10px auto;
+}
+
+.shoppingListSection {
+  border: 2px solid black;
+  width: 600px;
+  max-width: 90%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.shoppingListSection ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.shoppingListSection div {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+  border-bottom: 2px solid black;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
+}
