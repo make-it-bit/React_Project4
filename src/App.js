@@ -24,7 +24,7 @@ function App() {
     });
   };
 
-  const ShoppingList = ({deleteSelf}) => {
+  const ShoppingList = () => {
     return(
       <section className={styles.shoppingListSection}>
         <h2>Your Shopping List</h2>
