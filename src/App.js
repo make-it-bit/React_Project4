@@ -34,7 +34,7 @@ function App() {
               <li key={index}>
                 <div>
                   <span>{item}</span>
-                  <button type="button" onClick={() => deleteSelf(item)}>X</button>
+                  <button type="button" onClick={() => deleteListItem(item)}>X</button>
                 </div>
               </li>
             )
@@ -54,7 +54,7 @@ function App() {
           <button>Add</button>
         </form>
       </section>
-      {arrayOfItems.length > 0 && <ShoppingList deleteSelf={deleteListItem}/>}
+      {arrayOfItems.length > 0 && <ShoppingList/>}
     </main>
   );
 }
